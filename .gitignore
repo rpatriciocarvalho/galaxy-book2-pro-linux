@@ -1,0 +1,17 @@
+# Samsung firmware (VBT): each person generates their own with 01-hdmi-4k60-sharpness/generate_vbt.sh
+*.bin
+
+# Diagnostic dumps (may contain machine-specific data)
+i915_display_info*
+i915_opregion*
+*.log
+
+# Local Claude Code context (machine-specific details)
+CLAUDE.local.md
+
+# Editors and OS
+*~
+*.swp
+.vscode/
+.idea/
+.DS_Store

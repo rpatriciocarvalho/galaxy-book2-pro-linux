@@ -1,0 +1,3 @@
+# Let the dedicated Intel Arc A350M GPU (8086:5694) runtime-suspend (D3cold)
+# when it is not in use. Without this, power/control stays "on" and the card never powers off.
+ACTION=="add|bind|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x8086", ATTR{device}=="0x5694", ATTR{power/control}="auto"
